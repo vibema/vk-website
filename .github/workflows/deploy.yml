@@ -22,62 +22,9 @@ jobs:
       - name: Transfer files via SSH
         uses: appleboy/ssh-action@master
         with:
-          host: web60.alfahosting-server.de
-          username: h312264
-          key: |
-            -----BEGIN PRIVATE KEY-----
-MIIJQgIBADANBgkqhkiG9w0BAQEFAASCCSwwggkoAgEAAoICAQDQi2jJTZRirsWj
-QPong/8yq0YKcIZnfrZhrUSf/gHB5aZ/lW2QyhgjJLbl6cC42zkuCLaWduXVMgXU
-TSRJPmCg5yN8+Rbd+AwMXx1fs/YiM1yrSPctAn9+OK4owoV6kK9HkmPbTHfrlno+
-Xb56mifzApImq8ceJtuFbjWIv675SkMK8m7Jxa8/vPU507M0r38nkgcYT49Aq5YM
-SNOo/reyLXGyMjkFvpfmYc5jgSDNAXQctK/DE/bCtrbdWTV/Mez1Cj5gqTHRyJ97
-+fuu6H1sReFGdxpQTusvOJ5cBHm9HbbegpAlKxHrdgx5UjT86RrJWYd+L2WtjjLE
-wseQh+17v80HMA0u6Ls6YFRqpiu2uZcw3L/lvvF7msPSFk8f3HsUqt/X5MMoyRJJ
-Bsb7CJfRzycVwgbl3v6HM+3ouqmuBG7CAzjpb+9LOmqdpinPgZZb5ViV3k7ptZSm
-u8mGn1qOZUe/5cKDHZmgTMipmN1PJ2L+uHnjAdXa2LKZ4KGLx+C+k0c5gmrx2TLo
-TJupwQA0wu9/4PDBlT1WVwA7AYexg/dQLcl2hqCjOTctbEWDBz9I/lzOtkrYOOwS
-gKATUkkphQaaL8EvILSHbYAJzckgSz1/3zWvnCv4R2Elw1SGc0rpiuh9J7ls/WL9
-ZDzgngB8vBU+lcV4UiS3AK3Zxw/l1QIDAQABAoICAAyfk60zu/qpN59lLH891zG6
-+ldhblFPczzAXzoMBxE0lHp+kg5EnWdrLoMGPjsyUei+cEb1VX4tM/sg3ERuuSyk
-MRq8fSzceeY5z65eV1TEpSRdG1EnKI58YdZnx+qeXW3Ip7C7lTq2dhnWVNRZBngI
-PM6IcVoa4gjWnfj0GWRPoXVFLX2bMLt79aAVd3CF+v1rMnC/SB2TBVcjBWTiXj4z
-0AEIVzlIyysP2o1dYJ3oK54dNdJqH/KzWqhVYQ6c+AnxH8t8El7vdO/tNtXkjssC
-A9vfE8GutT+7fqJ1RuUyqkIXxx/o1oHZOHITjs+MUKnFeJUjy1TRGbOdUrUl9TL/
-c3YIAIx7F4W+NIyQzY/M8KjLDaoFhqSF+x8M6E8bWEMb6LxozhNRZXc1DBjiZZUR
-OBtrhk0zSHYDBixv6d4kXlOlKKUC8oMr1VpQ5PTg1DaCWACKOlpLf9M95rRIvkpe
-5pbBfmsUNfPgIUBHkE4h72NuJZREv5HPZmDb7MMuM6/mlBMNZsEv2S927vKbuPsR
-02Cj5WDVilN4/kmMcpISB7v8FeA/jiSKDUR0yD+C1y/8H9sytr9FeXFb9A7kMXce
-OjbcNJAo9D4cFhKqmkdMdJRlG+RiafC2x4nag8T45Zvosi86poz4tgR5fepyhhF7
-qPzNRF/ssd731fC/l4NBAoIBAQDsNKV6AwfE+mdODqKbmAQ3yQYv7S9xY+Nv4nNc
-uTQgd+cWmtlXuLu7DIez7XuEZaQQZWQCoyXsVU3gcnuYabANdavD5uIMbWsBHlOR
-I0xhmgo/xeC8rkCCLeTyZXu+AyYh7rjukzZsK7f8ejWWKAxhvG3qnI8itt6bi12w
-pUl7Gv7UaWhHxGLbbJcB3+7LYscyz+IFWOTNI7Vhkgt3Dj92QowENwhAmkMBB+CK
-jjGc3Ofw09i541PwSh77WeUftJple1570QPWyPle6s2tJY8dC73EKgnFDzM4HN5n
-x/hyij75WyxgqB4lJo24YcFCnzaiSvaWUclk1kqUzfNQnlplAoIBAQDiBViEgYGz
-qQXPuIjn6jI/sconNibVzXpxPlvyvPZGiiaIumw4md+iRHETpxpMN2A457opHJac
-BBEGzkGRnPrJk5OaOlWg2ATbHIaY+gHx51L3TXjHWouGgujpNXAqzobWzpAXcJHE
-RU+f7mcNMGiCDTaNp3sWDG2wVNfBZrsK1DKYmbHmcsP/fjb0fc8M34XGblDq4t3R
-xQakIpVTWyV6tsQLgkav9jyVxOsMIgkiMSb0Hpc3MmhTr6SSaWzXoZMUW7tSJO7a
-Yday/+xB4G1yWTJ6BMaJ2J2E9R8FfLZ8fPv9Hxla3GpymShD/4XOV+qL+2zUVTYu
-sNtvn5aaDG6xAoIBAQCA9AD/SpY8SMSLTdwie+yZlArnsWK8Ud9CHuwCTC4UJ8Gm
-iqVribQb2yxe46ESV/co6GGgOveiPbQFfBrTy6dMwdgjXHI+fKH1e1v+GbpCcrlz
-tZELEUqwh2O9nf/fbZKs5cpanU4R4hBRK1sD/hs8ZIXRluVh+1ouqvhcTvB93/AN
-gPpoa+PYjUEnydxxdxzvNaTcbHqFMCB/Ax91QPcOliggyPadZlp8PpOssRKO499Q
-kCd63Ivf3Gdrq9k15QCBtMeRazvgT9osop3lEGNAZT+Vz6mDxteco84b9IVD6wuU
-UN06a64BdDnc1qmOuKM4GRrkWAROI9uVv5Y9hiYtAoIBAEp47HOsoGnsNWf+K84O
-ksP99tf4tc8Yx1Fs9KsErDkN6CiBFIuJ1/AFkSSimL2oOWJGqEZHjzCU/m85os0x
-5khpAed9dR1sUB1KRuc86Uslp2ao9jTplrOZitjcrLrOFgvNQBkZFE6Rb+0IhpgH
-7Ud8xw7hsmLPcYz6R6UIDnVA+fLiIYYHJqGWmtDwazqYo+GAE9VxLxmhS9DlPEKc
-87p9YhdQs63i+o92tOPoiw3jGCyzr6uWRl3cr+M2LZDXQjkhCJXGaZU3S6DrRpNm
-OWnGDiW6URi2cSCQC8qpDw/xtq3ug1I28jQUVvogxZv5x+Sb0X4dHZ9A0uzyrpLP
-qeECggEAXLVXvvsTjpFvTQK7H301y80GpTf258rqP0pQgR4Ej/o6IqkXOshhCxpx
-uqGkr1z20RDy8R3b+6rmbClx9px/o+ztpw3INmtUI64MU3NsAJnHWiiNCiuAw6bW
-4SYBIWxOo5m2DzwmptJRlXmc+aENyQy8xjWWKWgFasnkDl8hlbXASqlTDkvaqsRn
-fbN+ohLQGRltlxH7r4CjD6vFqQ3e4XzaVFi9OEvlyQ7/NNYIZfxL/wjQbjRf+M4h
-4kOsg8BXhMROL0Lbxcw+xo4Cf2GfEh+NOgVOVkt58znjflmHyX2FtGN6iJ5yHGf4
-1/hEDgpsonobw8EsTI70eW+Wx+zxDA==
------END PRIVATE KEY-----
-
-          port: 22
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SERVER_PORT }}
           source: "_site/"
-          target: "/html/viktoria-knuth/"
+          target: "/home/viktoria-knuth/"
