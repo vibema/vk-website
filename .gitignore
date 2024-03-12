@@ -3,7 +3,6 @@
 .sass-cache
 .jekyll
 .idea
-app.jekyll-cache
 
 # Ignore OS generated files
 .DS_Store*
