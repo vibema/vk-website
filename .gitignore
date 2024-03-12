@@ -1,0 +1,39 @@
+# Ignore hidden folders like .tmp, .sass-cache, .jekyll
+.tmp
+.sass-cache
+.jekyll
+.idea
+app.jekyll-cache
+
+# Ignore OS generated files
+.DS_Store*
+Icon?
+Thumbs.db
+
+# Ignore random other files
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swn
+*.swo
+*.swp
+*._*
+*~
+
+# Ignore archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+
+# Ignore project specific files
+app/_bower_components
+app/php/vendor
+dist
+node_modules
+*.iml
