@@ -34,4 +34,4 @@ jobs:
           key: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
           port: ${{ secrets.SERVER_PORT }}
           source: "_site/"
-          target: "/tmp/"
+          target: "/www/vhosts/h312264.web60.alfahosting-server.de/html/viktoria-knuth/"
