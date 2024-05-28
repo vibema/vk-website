@@ -1,3 +1,62 @@
-<body>
-<h1>This works!</h1>
-</body>
+---
+layout: base
+---
+
+{% assign file = site.data.home.home %}
+
+<section id="hero">
+    <div class="container">
+        <article>
+        <h1 class="h1">{{ file.content.header.title }}</h1>
+        <p class="subtitle">{{ file.content.header.subtitle }}</p>
+        <div class="button-wrapper">
+            <a  href="mailto:{{ file.contact.email }}" target="_blank">
+            <button type="button" class="btn">
+                {{ file.contact.button }}
+            </button>
+            </a>
+        </div>
+    </article>
+    <div class="visual">
+
+    </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <article>
+        <h2 class="h2">{{ file.content.about.title }}</h2>
+        {% for p in file.content.about.p %}
+            <p>{{ p }}</p>
+        {% endfor %}
+        </article>
+
+    </div>
+</section>
+
+<section id="languages">
+    <div class="icon-slider">
+
+    </div>
+    <div class="container">
+        <article>
+            <h2 class="h2">{{ file.content.languages.title }}</h2>
+            {% for p in file.content.languages.p %}
+            <p>{{ p }}</p>
+        {% endfor %}
+        </article>
+        <article class="skills">
+            {% for skill in file.content.skills %}
+            <div class="skill">
+                <h3 class="h3">{{ skill[0] }}</h3>
+                <div class="level">
+                    {% for point in (1..skill[1])  %}
+                    <div class="point">o</div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </article>
+    </div>
+
+</section>

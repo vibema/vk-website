@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- Site-wide CSS -->
+  <link rel="stylesheet" href="/assets/css/base.css">
+
+  <!-- Page-specific CSS -->
+  {% if page.cssFiles %}
+    {% for file in page.cssFiles %}
+      <link rel="stylesheet" href="/css/{{ file }}">
+    {% endfor %}
+  {% endif %}
+</head>
+
+
+
+<body>
+
+{{ content }}
+
+  <!-- Site-wide JavaScript -->
+  <script src="/js/main.js" defer></script>
+
+  <!-- Page-specific JavaScript -->
+  {% if page.jsFiles %}
+    {% for file in page.jsFiles %}
+      <script src="/js/{{ file }}" defer></script>
+    {% endfor %}
+  {% endif %}
+</body>
+</html>
