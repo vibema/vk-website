@@ -1,0 +1,35 @@
+#hero {
+    text-align: center;
+    padding: 5rem 0;
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    .subtitle {
+        font-size: 1.8rem;
+
+    }
+    .cta {
+        margin-top: 2rem;
+    }
+    .visual {
+        max-height: 20rem;
+        display: flex;
+        margin-top: 4rem;
+        img {
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+#about {
+    text-align: center;
+    article {
+        max-width: 650px;
+        margin: auto;
+    }
+}
+#languages {
+    margin-top: 4rem;
+}

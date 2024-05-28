@@ -1,0 +1,14 @@
+{% assign nav = site.data.nav %}
+
+
+<nav id="main-nav" class="container">
+    <div class="logo"><img src="/assets/img/vk-logo.png"></div>
+    <ul class="menu">
+        {% for item in nav.menu %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <div class="button-wrapper cta">
+    <a href="{{ nav.contact.email }}"><button type="button">{{ nav.contact.button }}</button></a>
+</div>
+</nav>

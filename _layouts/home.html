@@ -1,24 +1,27 @@
 ---
 layout: base
+cssFiles: 
+  - home.css
 ---
 
 {% assign file = site.data.home.home %}
+{% assign nav = site.data.nav %}
 
 <section id="hero">
     <div class="container">
         <article>
-        <h1 class="h1">{{ file.content.header.title }}</h1>
+        <h1 class="h1 text-2xl">{{ file.content.header.title }}</h1>
         <p class="subtitle">{{ file.content.header.subtitle }}</p>
-        <div class="button-wrapper">
-            <a  href="mailto:{{ file.contact.email }}" target="_blank">
-            <button type="button" class="btn">
-                {{ file.contact.button }}
+        <div class="button-wrapper cta">
+            <a  href="mailto:{{ nav.contact.email }}" target="_blank">
+            <button type="button">
+                {{ nav.contact.button }}
             </button>
             </a>
-        </div>
+        </div> 
     </article>
     <div class="visual">
-
+        <img src="/assets/img/vk-avatar.png" alt="viktoria" />
     </div>
     </div>
 </section>

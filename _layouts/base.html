@@ -6,13 +6,14 @@
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
 
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <!-- Site-wide CSS -->
   <link rel="stylesheet" href="/assets/css/base.css">
 
-  <!-- Page-specific CSS -->
-  {% if page.cssFiles %}
-    {% for file in page.cssFiles %}
-      <link rel="stylesheet" href="/css/{{ file }}">
+  <!-- Layout-specific CSS -->
+  {% if layout.cssFiles %}
+    {% for file in layout.cssFiles %}
+      <link rel="stylesheet" href="/assets/css/{{ file }}">
     {% endfor %}
   {% endif %}
 </head>
@@ -20,6 +21,8 @@
 
 
 <body>
+
+{% include nav.html %}
 
 {{ content }}
 

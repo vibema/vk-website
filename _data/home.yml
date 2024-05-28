@@ -2,9 +2,8 @@ home:
   meta:
     title: "Home"
     description: "Welcome to my website"
-  contact:
-    button: "Let's connect"
-    email: 'mail@vk-webdesign.de'
+
+
   content:
     header:
       title: "Hi. I'm Viktoria."
