@@ -1,0 +1,30 @@
+  icons:
+    - react
+    - github
+    - jekyll
+    - code
+    - wordpress
+    - divi
+    - adobe
+    - slack
+    - asana
+  
+  projects:
+    - slug: danceaddict
+      title: "Dance Addict"
+    - slug: mara-lena-schoenborn
+      title: Mara Lena Schönborn
+    - slug: blues-without-shoes
+      title: Blues Without Shoes
+    - slug: karl-wiedemann
+      title: Karl Wiedemann
+    - slug: giordano-bruno-do-nascimento
+      title: Giordano Bruno do Nascimento
+    - slug: jan-uekermann
+      title: Jan Uekermann
+    - slug: laura-faig
+      title: Laura Faig
+    - slug: andrea-mueller
+      title: Andrea Müller
+    - slug: impuls-raum
+      title: impuls-raum

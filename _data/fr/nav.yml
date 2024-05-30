@@ -1,0 +1,10 @@
+menu:
+  - title: "À propos"
+    url: "#about"
+  - title: "Langages"
+    url: "#langages"
+  - title: "Projets"
+    url: "#projets"
+contact:
+  button: "Lets connect"
+  email: 'mail@vk-webdesign.de'

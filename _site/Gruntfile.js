@@ -8,6 +8,11 @@ module.exports = function(grunt) {
         implementation: sass,
         sourceMap: true
       },
+      slick: {
+        files: {
+          'assets/css/slick.css': 'sass/slick.scss'
+        }
+      },
       base: {
         files: {
           'assets/css/base.css': 'sass/base.scss'
@@ -18,6 +23,7 @@ module.exports = function(grunt) {
           'assets/css/home.css': 'sass/home.scss'
         }
       }
+
     },
     jekyll: {
       build: {},
@@ -62,7 +68,7 @@ module.exports = function(grunt) {
         }
       },
       jekyll: {
-        files: ['**/*.{html,md,markdown,css,scss,js}'],
+        files: ['**/*.{html,md,markdown,css,scss,js,yml,json}'],
         tasks: ['sass', 'jekyll:build'],
         options: {
           spawn: false

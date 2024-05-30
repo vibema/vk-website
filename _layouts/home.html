@@ -1,12 +1,15 @@
 ---
 layout: base
 cssFiles: 
-  - home.css
+    - slick.css
+    - home.css
+jsFiles:
+    - slick.js
+    - home.js
 ---
-
-{% assign file = site.data.home.home %}
-{% assign nav = site.data.nav %}
-
+{% assign lang = page.url | replace:'/',' ' | truncatewords: 1,"" %}
+{% assign file = site.data[lang].home %}
+{% assign nav = site.data[lang].nav %}
 <section id="hero">
     <div class="container">
         <article>
@@ -40,11 +43,18 @@ cssFiles:
 
 <section id="languages">
     <div class="icon-slider">
-
+        {% for icon in site.data.general.icons %}
+        <div class="icon">
+            <img src="/assets/img/{{ icon }}.png" alt="{{ icon }}" />
+        </div>
+       {% endfor %} 
     </div>
     <div class="container">
         <article>
             <h2 class="h2">{{ file.content.languages.title }}</h2>
+        </article>
+        <article>
+
             {% for p in file.content.languages.p %}
             <p>{{ p }}</p>
         {% endfor %}
@@ -55,11 +65,32 @@ cssFiles:
                 <h3 class="h3">{{ skill[0] }}</h3>
                 <div class="level">
                     {% for point in (1..skill[1])  %}
-                    <div class="point">o</div>
+                    <div class="point"></div>
                     {% endfor %}
                 </div>
+            </div>
             {% endfor %}
         </article>
     </div>
 
+</section>
+<section id="projects">
+    <div dir="rtl" class="project-slider">
+        {% for project in site.data.general.projects %}
+        <div class="project">
+            <a href="">
+                <img src="/assets/img/{{ project.slug }}.jpg" alt="{{ project.title }}" />
+            </a>
+        </div>
+        {% endfor %} 
+    </div>
+    <div class="container">
+        <article>
+            <h2 class="h2">{{ file.content.projects.title }}</h2>
+                <p>{{ file.content.projects.p }}</p>
+            </article>
+    </div>
+</section>
+<section class="call-to-action">
+    
 </section>

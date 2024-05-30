@@ -23,13 +23,123 @@
         }
     }
 }
-#about {
+#about, #projects {
+    margin-top: 2rem;
     text-align: center;
     article {
         max-width: 650px;
         margin: auto;
     }
 }
+
+@keyframes pulsing {
+    0% {
+        opacity: .3;
+    }
+    50% {
+        opacity: .6;
+    }
+    100% {
+        opacity: .3;
+    }
+}
+
 #languages {
-    margin-top: 4rem;
+    margin-top: 8rem;
+    .icon-slider {
+        .icon {
+            margin: 5rem;
+            opacity: .3;
+            img {
+                max-height: 4rem;
+                object-fit: contain;
+                width: auto;
+
+                
+            }
+        }
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1.7fr 1fr;
+        gap: .5rem 2.2rem;
+        article {
+            &:nth-child(2) {
+                grid-column: 1;
+            }
+            &.skills {
+                background: rgba(255,255,255,.03);
+                border-radius: 1.5rem;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-self: flex-start;
+                .skill {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 1rem;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .h3 {
+                        width: auto;
+                        font-size: .9rem;
+                    }
+                    .level {
+                        display: flex;
+                        justify-content: flex-start;
+                        width: 35%;
+                        align-items: center;
+                        .point {
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: rgba(255,255,255,.4);
+                            margin-right: .5rem;
+                        
+                        }
+                    }
+                    
+                
+                }
+            }
+        }
+
+    }
+}
+#projects {
+    padding: 7rem 0;
+    .project-slider { 
+        .project {
+            max-width: 12rem;
+            height: auto;
+            margin: 0 1.5rem;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(255,255,255,.05);
+            overflow: hidden;
+            a {
+                &:hover {
+                    img {
+                        opacity: 1;
+                        filter: grayscale(0%);
+                        transition: .8s;
+                    }
+                }
+                img {
+                    filter: grayscale(100%);
+                    opacity: .7;
+                    transition: .5s;
+                }
+            }
+
+        }
+    }
+    .container {
+        padding: 5rem 0;
+    }
+}
+
+
+.slick-slide {
+    transition: transform 50s linear !important;
 }

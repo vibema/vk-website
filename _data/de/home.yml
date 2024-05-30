@@ -1,0 +1,28 @@
+content:
+  header:
+    title: "Hi. Ich bin Viktoria."
+    subtitle: "Ich bin Frontend Web Entwicklerin." 
+  about:
+    title: "Über mich"
+    p:
+      - "Ursprünglich stamme ich aus Deutschland und bin jetzt in Frankreich ansässig. Nach einem Studium der vergleichenden Literaturwissenschaft und beruflichen Erfahrungen als Regieassistentin für Theater und Oper bin ich 2018 mit einer Leidenschaft für Kreativität, Struktur und Problemlösung in die digitale Welt eingetreten."
+      - "Lass uns gemeinsam großartige digitale Erlebnisse schaffen."
+  languages:
+    title: "Lass uns sprechen"
+    p:
+      - "Ich habe umfassende Expertise in HTML, CSS und JavaScript und sorge für die Erstellung robuster und visuell ansprechender Websites. Ich bin versiert in Jekyll, der Grundlage der Website, die Du gerade besuchst."
+      - "Darüber hinaus arbeite ich mit React.js und Next.js, um dynamische und interaktive Webauftritte zu entwickeln - für Projekte, die eine selbstständige Pflege und Wartung ermöglichen sollen, arbeite ich mit WordPress und PHP."
+      - "Für eine effiziente Zusammenarbeit bin ich es gewohnt, mit GitHub und anderen Tools wie AdobeXD, Asana und Slack zu arbeiten."
+      - "In der Vergangenheit habe ich außerdem viel mit dem Divi Pagebuilder gearbeitet und kann auch Expertise und Unterstützung in diesem Tool anbieten."
+      - "Meine Muttersprache ist Deutsch, ich spreche fließend Englisch und habe gute Kenntnisse in Französisch."
+  skills:
+    HTML / CSS / JS: 6
+    Jekyll: 5
+    React.js / Next.js: 4
+    WordPress / PHP: 3
+    GitHub: 4
+    Adobe CC: 4
+    Divi Pagebuilder: 6
+    Deutsch: 6
+    Englisch: 5
+    Französisch: 3

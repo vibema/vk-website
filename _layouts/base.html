@@ -1,5 +1,7 @@
+{% assign lang = page.url | replace:'/',' ' | truncatewords: 1,"" %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,13 +28,11 @@
 
 {{ content }}
 
-  <!-- Site-wide JavaScript -->
-  <script src="/js/main.js" defer></script>
-
+<script  src="/assets/js/jquery.js" defer></script>
   <!-- Page-specific JavaScript -->
-  {% if page.jsFiles %}
-    {% for file in page.jsFiles %}
-      <script src="/js/{{ file }}" defer></script>
+  {% if layout.jsFiles %}
+    {% for file in layout.jsFiles %}
+      <script src="/assets/js/{{ file }}" defer></script>
     {% endfor %}
   {% endif %}
 </body>

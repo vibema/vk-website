@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 300 800;
   font-display: swap;
-  src: url("/fonts/rubik-var.woff2") format("woff2");
+  src: url("/assets/fonts/rubik-var.woff2") format("woff2");
 }
 html {
   font-family: "Rubik", sans-serif;
@@ -18,7 +18,7 @@ p {
 
 :root {
   --container: 1000px;
-  --navHeight: 70px;
+  --navHeight: 3rem;
   --dark: #1C1C1C;
   --pink: #C6379C;
   --blue: #3C65AA;
@@ -48,17 +48,30 @@ p {
 #main-nav {
   position: sticky;
   top: 0;
+  z-index: 555;
+  padding: 10px 0;
+  background: var(--dark);
+  transition: 0.5s;
+}
+#main-nav.scrolled {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: 1s;
+}
+#main-nav .container {
   display: flex;
   justify-content: space-between;
   height: var(--navHeight);
-  padding: 10px 0;
-  background: var(--dark);
+  position: relative;
 }
 #main-nav .logo {
-  max-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 5rem;
 }
 #main-nav .logo img {
   max-height: 80%;
@@ -67,6 +80,8 @@ p {
 #main-nav .menu {
   display: flex;
   align-items: center;
+  gap: 2rem;
+  margin: auto;
 }
 #main-nav .menu a {
   color: #fff;
@@ -75,11 +90,16 @@ p {
   font-weight: 500;
   opacity: 0.65;
   letter-spacing: 0.4px;
+  transition: 0.3s;
 }
 #main-nav .menu a:hover {
   opacity: 1;
+  transition: 0.5s;
 }
 #main-nav .button-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

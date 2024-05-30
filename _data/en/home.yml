@@ -1,0 +1,31 @@
+content:
+  header:
+    title: "Hi. I'm Viktoria."
+    subtitle: "I am a frontend web developer."
+  about:
+    title: "About me"
+    p:
+      - "Originally from Germany and now based in France, my background contains studies in comparative literature and experience as an assistant director for theatre and opera."
+      - "In 2018 I transitioned into the digital world with a passion for creativity, structure and problem-solving.  Let's collaborate to create meaningful digital experiences."
+  languages:
+    title: "Let's talk languages"
+    p:
+      - "I have extensive expertise in HTML, CSS and JavasScript, ensuring the creation of robust and visually appealing websites. I am proficient in Jekyll, the foundation of the site you are visiting right now."
+      - "Moreover, I work with React.js and Next.js to develop dynamic, interactive and engaging websites, while also offering seamless management solutions through WordPress and PHP for projects requiring easy accessibility and maintenance."
+      - "As for collaboration, I am used to working with GitHub and other tools like AdobeXD, Asana and Slack to streamline teamwork and project management."
+      - "In the past I have worked a lot with the Divi Pagebuilder and can also offer expertise and support in this tool."
+      - "My mother tongue is German,  I am proficient in English (B2) and good in French (B1)."
+  skills:
+    HTML / CSS / JS: 6
+    Jekyll: 5
+    React.js / Next.js: 4
+    WordPress / PHP: 3
+    GitHub: 4
+    Adobe CC: 4
+    Divi Pagebuilder: 6
+    German: 6
+    English: 5
+    French: 3
+  projects:
+    title: "My Projects"
+    p: "Above, you can explore a selection of my work. Each of these projects was created using WordPress and Divi, enabling my clients to easily manage and update their content."
