@@ -8,7 +8,7 @@
 html {
   font-family: "Rubik", sans-serif;
   background: #1C1C1C;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 p {
@@ -17,7 +17,7 @@ p {
 }
 
 :root {
-  --container: 1000px;
+  --container: 1080px;
   --navHeight: 3rem;
   --dark: #1C1C1C;
   --pink: #C6379C;
@@ -29,10 +29,65 @@ p {
   margin: auto;
 }
 
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer .container p {
+  font-size: 1rem;
+}
+footer .container .footer-menu {
+  display: flex;
+}
+footer .container .footer-menu li {
+  margin-right: 1.5rem;
+}
+footer .container .footer-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  font-size: 0.8rem;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+footer .container .footer-menu li a:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+footer .container .logo-wrapper {
+  display: flex;
+  align-items: bottom;
+  opacity: 0.7;
+}
+footer .container .logo-wrapper span {
+  font-size: 0.8rem;
+  opacity: 0.4;
+  margin-right: 0.75rem;
+}
+footer .container .logo-wrapper img {
+  height: 1rem;
+  filter: grayscale(100%);
+  object-fit: contain;
+  margin-top: -1px;
+}
+
 .cta a {
   background: linear-gradient(to bottom right, var(--pink), var(--blue));
-  padding: 10px 28px 10px;
-  border-radius: 8px;
+  background-size: 200%;
+  background-position: left;
+  transition: 0.5s;
+  padding: 10px 24px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.cta a:hover {
+  background-position: right;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
 }
 .cta a button {
   font-weight: 500;
@@ -40,9 +95,34 @@ p {
 }
 
 .h2 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   margin-bottom: 1rem;
   font-weight: 600;
+  opacity: 0.6;
+}
+
+.h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.h4 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.h5 {
+  font-size: 1.25rem;
+  margin-top: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  opacity: 0.5;
 }
 
 #main-nav {
@@ -72,6 +152,7 @@ p {
   left: 0;
   top: 0;
   max-width: 5rem;
+  cursor: pointer;
 }
 #main-nav .logo img {
   max-height: 80%;
@@ -96,13 +177,17 @@ p {
   opacity: 1;
   transition: 0.5s;
 }
-#main-nav .button-wrapper {
+#main-nav .cta {
   position: absolute;
   right: 0;
   top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
+}
+#main-nav .cta a {
+  padding: 8px 24px;
 }
 
 /*# sourceMappingURL=base.css.map */

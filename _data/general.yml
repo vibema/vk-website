@@ -1,30 +1,50 @@
-  icons:
-    - react
-    - github
-    - jekyll
-    - code
-    - wordpress
-    - divi
-    - adobe
-    - slack
-    - asana
-  
-  projects:
-    - slug: danceaddict
-      title: "Dance Addict"
-    - slug: mara-lena-schoenborn
-      title: Mara Lena Schönborn
-    - slug: blues-without-shoes
-      title: Blues Without Shoes
-    - slug: karl-wiedemann
-      title: Karl Wiedemann
-    - slug: giordano-bruno-do-nascimento
-      title: Giordano Bruno do Nascimento
-    - slug: jan-uekermann
-      title: Jan Uekermann
-    - slug: laura-faig
-      title: Laura Faig
-    - slug: andrea-mueller
-      title: Andrea Müller
-    - slug: impuls-raum
-      title: impuls-raum
+icons:
+  - react
+  - github
+  - jekyll
+  - code
+  - wordpress
+  - divi
+  - adobe
+  - slack
+  - asana
+
+projects:
+  - slug: danceaddict
+    title: "Dance Addict"
+    url: "https://danceaddict.fr/"
+  - slug: mara-lena-schoenborn
+    title: Mara Lena Schönborn
+    url: "https://maralenaschoenborn.com/"
+  - slug: blues-without-shoes
+    title: Blues Without Shoes
+    url: "https://blues-without-shoes.danceaddict.fr/"
+  - slug: karl-wiedemann
+    title: Karl Wiedemann
+    url: "https://meisterhochzwei.com/"
+  - slug: giordano-bruno-do-nascimento
+    title: Giordano Bruno do Nascimento
+    url: "https://giordano-bruno-do-nascimento.com/"
+  - slug: jan-uekermann
+    title: Jan Uekermann
+    url: "https://januekermann.de/"
+  - slug: laura-faig
+    title: Laura Faig
+    url: "https://laurafaig.de/"
+  - slug: andrea-mueller
+    title: Andrea Müller
+    url: "https://osteopathie-transformation.de/"
+  - slug: impuls-raum
+    title: impuls-raum
+    url: "https://impuls-raum.ch/"
+footer:
+  - title: Impressum
+    url: 
+      de: "impressum"
+      en: "imprint"
+      fr: "#"
+  - title: Datenschutz
+    url: 
+      de: "#"
+      en: "#"
+      fr: "#"

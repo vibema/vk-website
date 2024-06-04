@@ -62,7 +62,7 @@ jsFiles:
         <article class="skills">
             {% for skill in file.content.skills %}
             <div class="skill">
-                <h3 class="h3">{{ skill[0] }}</h3>
+                <h3>{{ skill[0] }}</h3>
                 <div class="level">
                     {% for point in (1..skill[1])  %}
                     <div class="point"></div>
@@ -78,7 +78,7 @@ jsFiles:
     <div dir="rtl" class="project-slider">
         {% for project in site.data.general.projects %}
         <div class="project">
-            <a href="">
+            <a href="{{ project.url }}" target="_blank">
                 <img src="/assets/img/{{ project.slug }}.jpg" alt="{{ project.title }}" />
             </a>
         </div>
@@ -90,7 +90,25 @@ jsFiles:
                 <p>{{ file.content.projects.p }}</p>
             </article>
     </div>
-</section>
+</section>  
 <section class="call-to-action">
-    
+    <div class="container">
+        <article>
+            <h2 class="h2">{{ file.content.cta.title }}</h2>
+            {% for p in file.content.cta.p %}
+                <p>{{ p }}</p>
+            {% endfor %}
+
+            <div class="button-wrapper cta">
+                <a  href="mailto:{{ nav.contact.email }}" target="_blank">
+                <button type="button">
+                    {{ nav.contact.button }}
+                </button>
+                </a>
+            </div>
+        </article>
+        <div class="gif-wrapper">
+            <img src="/assets/img/qr-code.gif" alt="viktoria" />
+        </div>
+    </div>
 </section>

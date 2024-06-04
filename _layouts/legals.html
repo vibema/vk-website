@@ -1,0 +1,35 @@
+---
+layout: base
+cssFiles: 
+    - legals.css
+---
+
+{% assign lang = page.url | replace:'/',' ' | truncatewords: 1,"" %}
+{% assign content = page.data %}
+{% assign file = site.data[lang][content] %}
+{% assign nav = site.data[lang].nav %}
+
+<section class="legals"> 
+    <div class="container">
+        <article>
+            <h1 class="h2">{{ file.content.title }}</h1>
+        </article>
+        <article> 
+            {% for section in file.content.sections %}
+            {% if section.type == "p" %}
+                <p>{{ section.text }}</p>
+            {% endif %}
+            {% if section.type == "h2" %}
+                <h2 class="h3">{{ section.text }}</h3>
+            {% endif %}
+            {% if section.type == "h3" %}
+                <h3 class="h4">{{ section.text }}</h3>
+            {% endif %}
+            {% if section.type == "h4" %}
+            <h4 class="h5">{{ section.text }}</h3>
+            {% endif %}
+
+            {% endfor %}
+        </article>
+    </div>
+</section>

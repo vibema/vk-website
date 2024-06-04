@@ -1,0 +1,15 @@
+<footer>
+    <div class="container">
+        <ul class="footer-menu">
+            {% for item in site.data.general.footer %}
+            <li><a href="{{ item.url[lang] }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+        <div class="logo-wrapper">
+            <span>© 2024</span>
+            
+            <img src="/assets/img/vk-logo.png"/>
+
+        </div>
+    </div>
+</footer>

@@ -29,3 +29,9 @@ content:
   projects:
     title: "My Projects"
     p: "Above, you can explore a selection of my work. Each of these projects was created using WordPress and Divi, enabling my clients to easily manage and update their content."
+  cta:
+    title: "Ready to get started?"
+    p:
+      - "If you’re looking for a user-friendly, beautifully designed website, I’d love to help. Whether you have a clear vision or need some guidance, I’m here to bring your ideas to life."
+      - "Reach out, and let’s build something great together."
+    

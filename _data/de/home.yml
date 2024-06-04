@@ -26,3 +26,11 @@ content:
     Deutsch: 6
     Englisch: 5
     Französisch: 3
+  projects:
+      title: "Meine Projekte"
+      p: "Oben kannst du eine Auswahl meiner Arbeiten erkunden. Jedes dieser Projekte wurde mit WordPress und Divi erstellt, sodass meine Kunden ihre Inhalte leicht verwalten und aktualisieren können."
+  cta:
+      title: "Bereit, loszulegen?"
+      p:
+        - "Wenn du auf der Suche nach einer benutzerfreundlichen, schön gestalteten Website bist, helfe ich dir gerne. Egal, ob du eine klare Vorstellung hast oder Anregungen und Anleitung benötigst, ich bin hier, um deine Ideen zum Leben zu erwecken."
+        - "Kontaktiere mich, und lass uns gemeinsam etwas Großartiges schaffen."

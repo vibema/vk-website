@@ -22,7 +22,12 @@ module.exports = function(grunt) {
         files: {
           'assets/css/home.css': 'sass/home.scss'
         }
-      }
+      },      
+      legals: {
+        files: {
+          'assets/css/legals.css': 'sass/legals.scss'
+        }
+      },
 
     },
     jekyll: {

@@ -4,7 +4,7 @@
 <nav id="main-nav">
     <div class="container">
 
-    <div class="logo"><img src="/assets/img/vk-logo.png"></div>
+    <div class="logo" alt="home"><a href="{{ site.url }}/{{lang}}/"><img src="/assets/img/vk-logo.png"></a></div>
     <ul class="menu">
         {% for item in nav.menu %}
             <li><a href="{{ item.url }}">{{ item.title }}</a></li>
