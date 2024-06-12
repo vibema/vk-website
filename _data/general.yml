@@ -9,6 +9,8 @@ icons:
   - slack
   - asana
 
+contact: mail@vk-webdesign.com
+
 projects:
   - slug: danceaddict
     title: "Dance Addict"
@@ -42,9 +44,9 @@ footer:
     url: 
       de: "impressum"
       en: "imprint"
-      fr: "#"
+      fr: "mentions-legales"
   - title: Datenschutz
     url: 
-      de: "#"
-      en: "#"
-      fr: "#"
+      de: "datenschutz"
+      en: "privacy-policy"
+      fr: "politique-de-confidentialite"

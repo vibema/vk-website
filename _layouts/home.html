@@ -10,13 +10,14 @@ jsFiles:
 {% assign lang = page.url | replace:'/',' ' | truncatewords: 1,"" %}
 {% assign file = site.data[lang].home %}
 {% assign nav = site.data[lang].nav %}
+<main>
 <section id="hero">
     <div class="container">
         <article>
-        <h1 class="h1 text-2xl">{{ file.content.header.title }}</h1>
+        <h1 class="h1">{{ file.content.header.title }}</h1>
         <p class="subtitle">{{ file.content.header.subtitle }}</p>
         <div class="button-wrapper cta">
-            <a  href="mailto:{{ nav.contact.email }}" target="_blank">
+            <a  href="mailto:{{ site.data.general.contact }}" target="_blank">
             <button type="button">
                 {{ nav.contact.button }}
             </button>
@@ -100,7 +101,7 @@ jsFiles:
             {% endfor %}
 
             <div class="button-wrapper cta">
-                <a  href="mailto:{{ nav.contact.email }}" target="_blank">
+                <a  href="mailto:{{ site.data.general.contact }}" target="_blank">
                 <button type="button">
                     {{ nav.contact.button }}
                 </button>
@@ -112,3 +113,4 @@ jsFiles:
         </div>
     </div>
 </section>
+</main>

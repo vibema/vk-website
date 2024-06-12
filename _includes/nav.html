@@ -3,15 +3,28 @@
 
 <nav id="main-nav">
     <div class="container">
+    <div class="logo" alt="home"><a class="smooth-scroll"  href="{{ site.url }}/{{lang}}/" ><img src="/assets/img/vk-logo.png"></a></div>
 
-    <div class="logo" alt="home"><a href="{{ site.url }}/{{lang}}/"><img src="/assets/img/vk-logo.png"></a></div>
+    <div class="button-wrapper cta">
+        <div class="language-switcher-wrapper">
+            {% include svg/globe.html %}
+        <select id="language-switcher">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+        </select> 
+        </div>
+    <a href="mailto:{{ site.data.general.contact }}"><button type="button">{{ nav.contact.button }}</button></a>
+    <div id="mobile-toggler">
+        {% include svg/falafel.html %}
+    </div>
+    </div>
+
+</div>
     <ul class="menu">
-        {% for item in nav.menu %}
-            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% for item in nav.menu %} 
+            <li><a class="smooth-scroll" {% if page.layout == "home" %} href="{{ item.url }}" {% else %} href="{{ site.url }}/{{lang}}{{ item.url }}" {% endif %}>{{ item.title }}</a></li>
         {% endfor %}
     </ul>
-    <div class="button-wrapper cta">
-    <a href="{{ nav.contact.email }}"><button type="button">{{ nav.contact.button }}</button></a>
-    </div>
-</div>
+
 </nav>

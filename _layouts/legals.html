@@ -26,9 +26,15 @@ cssFiles:
                 <h3 class="h4">{{ section.text }}</h3>
             {% endif %}
             {% if section.type == "h4" %}
-            <h4 class="h5">{{ section.text }}</h3>
+            <h4 class="h5">{{ section.text }}</h4>
             {% endif %}
-
+            {% if section.type == "list" %}
+                <ul>
+                    {% for item in section.items %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
             {% endfor %}
         </article>
     </div>

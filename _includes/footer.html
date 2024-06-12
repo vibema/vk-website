@@ -2,7 +2,7 @@
     <div class="container">
         <ul class="footer-menu">
             {% for item in site.data.general.footer %}
-            <li><a href="{{ item.url[lang] }}">{{ item.title }}</a></li>
+            <li><a href="{{ site.url }}/{{ lang }}/{{ item.url[lang] }}">{{ item.title }}</a></li>
             {% endfor %}
         </ul>
         <div class="logo-wrapper">

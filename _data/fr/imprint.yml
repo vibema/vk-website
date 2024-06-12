@@ -1,0 +1,35 @@
+content:
+  title: "Mentions légales"
+  sections:
+    - type: p
+      text: "vk webdesign<br>27b Rue Saint-Melaine<br>35700 Rennes<br>France"
+    - type: h4
+      text: "Représenté par :"
+    - type: p
+      text: "Viktoria Knuth"
+    - type: h4
+      text: "Contact"
+    - type: p
+      text: "mail(at)vk-webdesign.de"
+    - type: h2
+      text: "Clause de non-responsabilité"
+    - type: h3
+      text: "Responsabilité pour le contenu"
+    - type: p
+      text: "Le contenu de nos pages a été créé avec le plus grand soin. Cependant, nous ne pouvons garantir l'exactitude, l'exhaustivité ou l'actualité du contenu. En tant que fournisseur de services, nous sommes responsables de notre propre contenu sur ces pages conformément au paragraphe 1 de l'article 7 TMG selon les lois générales. Selon les articles 8 à 10 TMG, nous ne sommes pas obligés de surveiller les informations externes transmises ou stockées ou d'enquêter sur les circonstances indiquant une activité illégale. Les obligations de suppression ou de blocage de l'utilisation des informations selon les lois générales restent inchangées. Cependant, la responsabilité à cet égard n'est possible qu'à partir du moment où une infraction spécifique devient connue. Dès que nous aurons connaissance de violations de la loi, nous supprimerons ce contenu immédiatement."
+    - type: h3
+      text: "Responsabilité pour les liens"
+    - type: p
+      text: "Notre offre contient des liens vers des sites web externes de tiers sur lesquels nous n'avons aucune influence quant à leur contenu. Par conséquent, nous ne pouvons assumer aucune responsabilité pour ces contenus externes. Le fournisseur ou opérateur respectif des pages liées est toujours responsable de leur contenu. Les pages liées ont été vérifiées pour d'éventuelles violations légales au moment de la création du lien. Aucun contenu illégal n'était reconnaissable au moment de la création du lien. Un contrôle permanent du contenu des pages liées n'est pas raisonnable sans preuve concrète de violation de la loi. Dès que nous aurons connaissance de violations de la loi, nous supprimerons ces liens immédiatement."
+    - type: h3
+      text: "Droits d'auteur"
+    - type: p
+      text: "Le contenu et les œuvres créés par les opérateurs du site sur ces pages sont soumis au droit d'auteur allemand. La duplication, le traitement, la distribution et toute forme d'utilisation en dehors des limites du droit d'auteur nécessitent le consentement écrit de l'auteur ou du créateur respectif. Les téléchargements et les copies de ces pages ne sont autorisés que pour un usage privé et non commercial. Dans la mesure où le contenu de ce site n'a pas été créé par l'exploitant, les droits d'auteur de tiers sont respectés. En particulier, les contenus de tiers sont marqués comme tels. Si, toutefois, vous prenez connaissance d'une violation des droits d'auteur, veuillez nous en informer. Dès que nous aurons connaissance de violations de la loi, nous supprimerons ce contenu immédiatement."
+    - type: h3
+      text: "Protection des données"
+    - type: p
+      text: "L'utilisation de notre site web est généralement possible sans fournir de données personnelles. Dans la mesure où des données personnelles (par exemple, nom, adresse ou adresses e-mail) sont collectées sur nos pages, cela se fait toujours sur une base volontaire autant que possible. Ces données ne seront pas transmises à des tiers sans votre consentement explicite."
+    - type: p
+      text: "Nous attirons votre attention sur le fait que la transmission de données sur Internet (par exemple, lors de la communication par e-mail) peut présenter des failles de sécurité. Une protection complète des données contre l'accès par des tiers n'est pas possible."
+    - type: p
+      text: "L'utilisation par des tiers des données de contact publiées dans le cadre de l'obligation de mentions légales pour l'envoi de publicité et de matériel d'information non sollicités est expressément interdite. Les exploitants des pages se réservent expressément le droit de prendre des mesures juridiques en cas d'envoi non sollicité d'informations publicitaires, telles que des courriels indésirables."
