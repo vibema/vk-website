@@ -30,9 +30,9 @@ p {
   --pink: #C6379C;
   --blue: #3C65AA;
 }
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   :root {
-    --container: 1080px;
+    --container: 1000px;
   }
 }
 
