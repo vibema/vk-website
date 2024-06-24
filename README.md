@@ -1,2 +1,2 @@
 # vk-website
-Website on viktoria-knuth.de
+Website on vk-webdesign.com
